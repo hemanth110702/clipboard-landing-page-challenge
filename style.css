@@ -27,10 +27,39 @@ header {
   width: min(33rem,50%); 
   margin: auto auto;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
+}
+
+button {
+  font-family: 'Bai Jamjuree', sans-serif;
+  padding: 10px 20px ;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 3rem;
+  margin-right: 0.5rem;
+  box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.2);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.ios {
+  background-color: hsl(171, 66%, 44%);
+}
+
+.mac {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.dg-clr {
+  
 }
 
 .big-heading {
+  color: hsl(210, 10%, 33%);
   font-size: 1.9rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -38,6 +67,7 @@ header {
 }
 
 .definition {
+  color: hsl(201, 11%, 66%);
   max-width: 60ch;
   font-size: 0.8rem;
   text-align: center;
@@ -46,6 +76,7 @@ header {
 }
 
 .medium-heading {
+  color: hsl(210, 10%, 33%);
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -53,12 +84,14 @@ header {
 }
 
 .sub-heading {
+  color: hsl(210, 10%, 33%);
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .sub-definition {
+  color: hsl(201, 11%, 66%);
   width: 33ch;
   margin-bottom: 2rem;
 }
@@ -66,24 +99,96 @@ header {
 
 .snippets {
   display: flex;
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 .computer-container {
-  width: max(60%); /* 60% */
-  height: 50%;
+  width: max(60%, 45rem);
+  height: max(30rem);
 }
 
 .computer {
   width: 80%;
-  height: 100%;
+  height: max(80%);
   margin-top: -2rem;
   margin-left: -2rem;
 }
 
 .features {
   margin-left: -5rem;
+}
+
+.devices-container {
+  display: flex;
+  justify-content: center;
+}
+
+.devices {
+  width: max(60%);
+}
+
+.workflow {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  gap: 2rem;
+}
+
+.icon {
+  margin-bottom: 3rem;
+}
+
+.companies {
+  width: min(100%,68rem);
+  margin: 8rem auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.to-know-more {
+  background-color: rgb(232, 232, 232);
+  display: grid;
+  grid-template-columns: minmax(20%, 200px) minmax(60%, 500px) minmax(20%, 200px);
+  grid-template-rows: min(150px);
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+}
+
+.small-logo {
+  width: 20%;
+  height: 30%;
+  margin: auto auto;
+}
+
+.middle {
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+  align-content: center;
+  gap: 2rem;
+}
+
+.right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.more-info:hover{
+  color: hsl(171, 66%, 44%);
+  cursor: pointer;
+
+}
+
+.social-icon:hover path {
+  fill: hsl(171, 66%, 44%);
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .attribution {
