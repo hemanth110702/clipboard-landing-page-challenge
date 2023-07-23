@@ -160,11 +160,38 @@ button:hover {
 }
 
 .middle {
+  margin: auto auto;
   display: grid;
   grid-template-columns: repeat(3, 10rem);
-  align-content: center;
-  gap: 2rem;
+  grid-template-rows: 2rem 2rem;
+  align-items: center;
+  grid-template-areas: 
+        'faqs privacyPolicy installGuide'
+        'contactUs pressKit .';
 }
+
+.faqs {
+  grid-area: faqs;
+}
+
+
+
+.privacyPolicy {
+  grid-area: privacyPolicy;
+}
+
+.installGuide {
+  grid-area: installGuide;
+}
+
+.contactUs {
+  grid-area: contactUs;
+}
+
+.pressKit {
+  grid-area: pressKit;
+}
+
 
 .right {
   display: flex;
