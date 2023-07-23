@@ -96,7 +96,7 @@ button:hover {
   margin-bottom: 4rem;
 }
 
-.snippets-heading {
+.snippets-heading, .access-heading {
   font-size: 1.55rem;
   margin-bottom: 1rem;
 }
@@ -141,11 +141,6 @@ button:hover {
 
 .access-about {
   margin-bottom: 4rem;
-}
-
-.access-heading {
-  font-size: 1.55rem;
-  margin-bottom: 1rem;
 }
 
 .access-content {
@@ -368,53 +363,60 @@ button:hover {
 @media screen and (max-width: 475px) {
   
   header {
-    height: 30vh;
+    height: 40vh;
     background-size: cover;
   }
   
-  
   .logo {
-    width: 30%;
-    height: 45%;
+    width: 35%;
+    height: 35%;
   }
   
   .center {
-    width: min(20rem, 85%); 
+    width: min(20rem, 90%); 
     margin-bottom: 5rem;
+  }
+
+  .glance-content {
+    max-width: 30ch;
+    margin-bottom: 1rem;
   }
   
   button {
     width: 80%;
     padding: 15px 20px ;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
   }
-  
-  .definition {
-    max-width: 35ch;
-  }
-  
-  .sub-definition {
-    color: var(--clr-grayish-blue);
-    width: 33ch;
-    margin-bottom: 2rem;
-  }
-  
-  .snippets {
+
+  .snippets-about {
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .snippets-content {
+    max-width: 30ch;
+  }
+
+  .snippets-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .computer-container {
     margin: auto auto;
-    width: min(20rem, 85%);
+    width: 85%;
     height: 80%;
   }
   
   .computer {
     width: 100%;
-    height: max(80%);
+    max-height: 80%;
     margin: 0;
   }
   
@@ -422,36 +424,100 @@ button:hover {
     width: min(20rem, 85%);;
     margin: 4rem auto;
     text-align: center;
+    padding: 0;
+  }     
+
+  .features-content {
+    max-width: 30ch;
   }
   
   .devices {
-    width: max(90%);
+    max-width: 90%;
   }
-  
-  .workflow {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    gap: 1rem;
-  }
-  
-  .companies {
-    width: min(100%,68rem);
-    margin: 4rem auto;
+
+  .access-about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .company-logo {
-    width: 40%;
-    margin-bottom: 5rem;
+  .access-content {
+    max-width: 30ch;
+  }
+
+  .workflow-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .workflow-content {
+    max-width: 30ch;
+  }
+  
+  .workflow-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sub-workflow {
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sub-workflow-content {
+    max-width: 30ch;
+  }
+
+  .sub-workflow-icon-container {
+    margin-bottom: 2rem;
+  }
+  
+  .companies-container {
+    width: min(100%,68rem);
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .clipboard-about {
+    width: 100%;
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clipboard-heading {
+    max-width: 18ch;
+  }
+
+  .clipboard-content {
+    width: 29.5ch;
+    margin-bottom: 2rem;
   }
   
   .to-know-more {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-middle {
     display: flex;
     flex-direction: column;
   }
@@ -460,13 +526,12 @@ button:hover {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    margin-bottom:  2rem;
   }
   
   .small-logo {
-    width: 10%;
+    width: 30%;
     height: 30%;
-    margin: auto auto;
+    margin-bottom: 0;
   }
   
   .middle {
