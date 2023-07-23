@@ -1,3 +1,15 @@
+:root {
+  /* font-colors */
+  --clr-strong-cyan : hsl(171, 66%, 44%);
+  --clr-light-blue : hsl(233, 100%, 69%);
+  --clr-dark-grayish-blue : hsl(210, 10%, 33%);
+  --clr-grayish-blue : hsl(201, 11%, 66%);
+
+  /* font-weights */
+  --fs-400 : 400;
+  --fs-600 : 600;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -47,47 +59,48 @@ button:hover {
 }
 
 .ios {
-  background-color: hsl(171, 66%, 44%);
+  background-color: var(--clr-strong-cyan);
 }
 
 .mac {
-  background-color: hsl(233, 100%, 69%);
+  background-color: var(--clr-light-blue);
 }
 
 .big-heading {
-  color: hsl(210, 10%, 33%);
+  color: var(--clr-dark-grayish-blue);
   font-size: 1.9rem;
-  font-weight: bold;
+  font-weight: var(--fs-600);
   margin-bottom: 1rem;
   margin-top: 2rem;
 }
 
 .definition {
-  color: hsl(201, 11%, 66%);
+  color: var(--clr-grayish-blue);
   max-width: 60ch;
   font-size: 0.8rem;
+  font-weight: var(--fs-400);
   text-align: center;
   margin-inline: auto;
   margin-bottom: 3rem;
 }
 
 .medium-heading {
-  color: hsl(210, 10%, 33%);
+  color: var(--clr-dark-grayish-blue);
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: var(--fs-600);
   margin-bottom: 1rem;
   margin-top: 2rem;
 }
 
 .sub-heading {
-  color: hsl(210, 10%, 33%);
+  color: var(--clr-dark-grayish-blue);
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: var(--fs-600);
   margin-bottom: 1rem;
 }
 
 .sub-definition {
-  color: hsl(201, 11%, 66%);
+  color: var(--clr-grayish-blue);
   width: 33ch;
   margin-bottom: 2rem;
 }
@@ -142,7 +155,7 @@ button:hover {
 }
 
 .to-know-more {
-  background-color: rgb(232, 232, 232);
+  background-color: rgb(242, 242, 242);
   display: grid;
   grid-template-columns: minmax(20%, 200px) minmax(60%, 500px) minmax(20%, 200px);
   grid-template-rows: min(150px);
@@ -204,7 +217,7 @@ button:hover {
 }
 
 .more-info:hover{
-  color: hsl(171, 66%, 44%);
+  color: var(--clr-strong-cyan);
   cursor: pointer;
 }
 
@@ -213,7 +226,7 @@ button:hover {
 }
 
 .social-icon:hover path {
-  fill: hsl(171, 66%, 44%);
+  fill: var(--clr-strong-cyan);
 }
 
 .pointer {
@@ -258,11 +271,10 @@ button:hover {
   }
   
   .sub-definition {
-    color: hsl(201, 11%, 66%);
+    color: var(--clr-grayish-blue);
     width: 33ch;
     margin-bottom: 2rem;
   }
-  
   
   .snippets {
     display: flex;
@@ -317,7 +329,6 @@ button:hover {
   }
   
   .to-know-more {
-    background-color: rgb(232, 232, 232);
     display: flex;
     flex-direction: column;
   }
@@ -341,6 +352,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+    gap: 1.5rem;
   }
   
   .right {
