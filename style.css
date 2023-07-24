@@ -421,8 +421,10 @@ button:hover {
   }
   
   .features {
-    width: min(20rem, 85%);;
-    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 0;
   }     
