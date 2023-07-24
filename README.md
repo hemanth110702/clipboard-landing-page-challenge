@@ -43,7 +43,7 @@ Users should be able to:
 **clipboard slide of mobile-view.**<br>
 <img src="https://github.com/hemanth110702/clipboard-landing-page-challenge/assets/89832451/8901fcf1-fdeb-4e72-a98c-f2af102eb16a" width="250" height="400" />
 
-**footer of mobile-view.** 
+**footer of mobile-view.** <br>
 <img src="https://github.com/hemanth110702/clipboard-landing-page-challenge/assets/89832451/6400315f-119a-4b90-bee8-0341367b6c93" width="250" height="400" />
 
 
